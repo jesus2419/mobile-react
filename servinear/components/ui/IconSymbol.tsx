@@ -4,6 +4,8 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { SymbolWeight } from 'expo-symbols';
 import React from 'react';
 import { OpaqueColorValue, StyleProp, ViewStyle } from 'react-native';
+import Feather from '@expo/vector-icons/Feather'; // Import Feather
+
 
 // Add your SFSymbol to MaterialIcons mappings here.
 const MAPPING = {
@@ -21,6 +23,18 @@ const MAPPING = {
 >;
 
 export type IconSymbolName = keyof typeof MAPPING;
+
+
+// Add your SFSymbol to Feather mappings here.
+const FEATHER_ICONS_MAPPING = {
+  // Mapeo de Feather
+  'message.fill': 'message-square', // SF Symbol (o nombre personalizado) -> Feather icon
+} as Partial<
+  Record<
+    import('expo-symbols').SymbolViewProps['name'],
+    React.ComponentProps<typeof Feather>['name']
+  >
+>;
 
 /**
  * An icon component that uses native SFSymbols on iOS, and MaterialIcons on Android and web. This ensures a consistent look across platforms, and optimal resource usage.
