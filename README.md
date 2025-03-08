@@ -2,6 +2,21 @@
 react native mobile solution
 Esta solucion se creó usando de base react native y la libreria de expo para lanzar el código en android y en ios, asi como para hacer pruebas mas óptimas y rapidas
 
+1. Instalar Node.js y npm
+Asegúrate de tener Node.js y npm instalados en tu sistema. Puedes descargarlos desde nodejs.org.
+
+Para verificar si ya los tienes instalados, ejecuta en tu terminal:
+
+node -v
+npm -v
+2. Instalar React Native CLI
+Instala el CLI de React Native globalmente en tu sistema:
+
+npm install
+npm install -g expo-cli
+npm install -g react-native-cli
+npx expo start
+
 plano de la aplicaion 
 servinear/
 ├── app/
